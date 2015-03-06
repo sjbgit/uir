@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.slate.min.css"/>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body ng-app='uir'>
+
+<div ui-view>
+
+</div>
+
+<!-- VendorScripts -->
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="lib/lodash/dist/lodash.min.js"></script>
+
+<!-- inject:js -->
+<script src="app/app.js"></script>
+<script src="app/redis/redis.ctrl.js"></script>
+<script src="app/main/main.ctrl.js"></script>
+<script src="app/tables/tables.ctrl.js"></script>
+<script src="app/sql/sql.ctrl.js"></script>
+<!-- endinject -->
+</body>
+</html>
