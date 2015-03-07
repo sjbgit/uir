@@ -18,6 +18,7 @@
         $stateProvider
             .state('main', {
                 url: '/',
+                //abstract: true,
                 templateUrl: 'app/main/main.html',
                 controller: 'MainCtrl',
                 controllerAs: 'vm'
@@ -59,7 +60,7 @@
 
         $urlRouterProvider.otherwise('/');
 
-        app.run(['$state', function($state) {
+        app.run(['$state', 'stateWatcherService', function($state, stateWatcherService) {
 
         }]);
 
